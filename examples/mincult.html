@@ -14,69 +14,92 @@
   <script src="assets/library/iframe.js"></script>
 
   <style type="text/css">
-    body > .ui.container {
-      margin-top: 3em;
-    }
-    iframe {
-      border: none;
-      width: calc(100% + 2em);
-      margin: 0em -1em;
-      height: 300px;
-    }
-    iframe html {
-      overflow: hidden;
-    }
-    iframe body {
-      padding: 0em;
+    body {
+      margin: 0 0 0 0;
+      font-size: 16px;
     }
 
-    .ui.container > h1 {
-      font-size: 3em;
+    h1 {
+      font-size: 28px;
+      font-weight: 300;
+      letter-spacing: 0.5px normal;
+      margin-bottom: 4px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    h4 {
+      font-size: 13px;
+      color: #666666;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+    }
+
+    .map {
+      background-color:#453929;
+      Width:100%;
+      Height:100px;
       text-align: center;
-      font-weight: normal;
-    }
-    .ui.container > h2.dividing.header {
-      font-size: 2em;
-      font-weight: normal;
-      margin: 4em 0em 3em;
     }
 
+    .region {
+      width:50%;
+      height: auto;
+      text-align: center;
+      margin-top: 16px;
 
-    .ui.table {
-      table-layout: fixed;
     }
+    .region-picker
+    {
+      align-content: center;
+    }
+
+    .index-counter
+    {
+      align-content: center;
+    }
+
+    .index-counter-item {
+      height: 56px;
+      width: 80px;
+      vertical-align:text-bottom;
+    }
+
   </style>
 </head>
 <body>
 
-<div class="ui container">
 
-  <h1>Theming Examples</h1>
+  <div class="map">
+    <h1>Карта</h1>
+  </div>
 
-  <h2 class="ui dividing header">Site</h2>
-  <iframe src="components/site.html" width="100%" scrolling="no"></iframe>
+  <div class="region">
+    <div class="region-picker">
+        <h1>Калужская область</h1>
+        <h4>№13 в округе, №23 в РФ</h4>
+    </div>
 
-  <h2 class="ui dividing header">Menu</h2>
-  <iframe src="components/menu.html" width="100%" scrolling="no"></iframe>
+    <div class=index-counter>
+      <a href=#>
+        <div class=index-counter-item style="background-color: red;">
+          20</a>
+        </div>
+        <div  class=index-counter-item style="background-color: blue;">
+          <a href=#>20</a>
+        </div>
+    </div>
 
-<h1>hello world!</h1>
-
-  <h2 class="ui dividing header">Bfffons</h2>
-  <iframe src="components/button.html" width="100%" scrolling="no"></iframe>
-
-  <h2 class="ui dividing header">Table</h2>
-  <iframe src="components/table.html" width="100%" scrolling="no"></iframe>
-
-  <h2 class="ui dividing header">Input</h2>
-  <iframe src="components/input.html" width="100%" scrolling="no"></iframe>
-
-
-  <h2 class="ui dividing header">Card</h2>
-  <iframe src="components/card.html" width="100%" scrolling="no"></iframe>
+  </div>
 
 
-
-</div>
 
 
 <script>
